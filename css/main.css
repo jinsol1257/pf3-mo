@@ -1,0 +1,562 @@
+main{
+  position: relative;
+}
+section{
+  width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+.wrap{
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+.subject{
+  line-height: 1;
+  font-size: 35px;
+  margin-bottom: 30px;
+  margin-top: 0;
+  font-family: 'Black And White Picture', sans-serif;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+.subject span{
+  
+  font-size: 70px;
+}
+.subject2{
+  font-size: 40px;
+  font-weight: 700;
+  font-family: 'Black And White Picture', sans-serif;
+}
+section#about{
+
+}
+section#about .company{
+   /*정렬방향:수평반대로*/
+  text-align: center;
+}
+section#about .company div{
+}
+section#about .company p{
+  font-size: 39px;
+  font-family: 'Black And White Picture', sans-serif;
+}
+section#about .company p:nth-child(2){
+  font-size: 19px;
+  font-family: 'Gothic A1', sans-serif;
+  font-weight: 300;
+  margin-top: 20px;
+  line-height: 1.3;
+}
+section#about .company p span{
+  
+}
+
+section#about .company .go{
+  border: 1px solid;
+  padding: 20px 30px;
+  margin-top: 30px;
+  display: inline-block;
+  width: 250px;
+  text-align: center;
+  transition: all 0.5s;
+  background-color: black;
+  border-radius: 100px;
+  color: white;
+  font-weight: 500;
+}
+section#about .company .go:hover{
+  background-color: white;
+  color: black;
+}
+section#about .company span.control{
+  margin-top: 70px;
+}
+section#about .company span.control button{
+  border: none;
+  background-color: transparent;
+  font-size: 0;
+  width: 50px;
+  height: 50px;
+  background-size: 57%;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  border: 1px solid;
+  border-radius: 50%;
+  background-position: center;
+}
+section#about .company span.control button.prev{
+  background-image: url(../img/r-arrow.svg);
+  transform: rotate(180deg);
+  background-position-x: center;
+  margin-right: 30px;
+}
+section#about .company span.control button.next{
+  background-image: url(../img/r-arrow.svg);
+  background-position-x: center;
+}
+section#about .company img{
+  max-width: 100%; /* 최대크기는 원래크기만큼만 커지게 */
+  width:70%;
+  transition-property: opacity;
+  transition-duration: 0.5s;
+  transition: opacity 0.5s;
+}
+section#about .company img:hover{
+  opacity: 0.3;
+}
+section#about .company img:first-child + img{ /* img태그는 인라인태그 인라인태그를 중앙정렬하려면 부모요소에 text-align:center */
+  display: none; /*보이지않게*/
+}
+
+/* ------------------------------------서비스--------------------------------------- */
+#service{
+
+}
+#service .wrap{
+  display: flex;
+  justify-content: space-between;
+  height: 1300px;
+  background-image: url(../img/beer4.png), url(../img/beer1.png);
+  background-repeat: no-repeat;
+  background-position-x: 99% ,left;
+  background-position-y: 4%, 90%;
+  background-size: 7%, 19%;
+}
+/* #service .wrap h2.subject{
+  margin: 0 auto;
+} */
+#service .wrap h2+.p{
+  
+  margin-top: 26px;
+}
+#service .wrap .p{
+}
+#service .wrap ul{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 0;
+  width: 65%;
+  position: relative;
+}
+#service .wrap ul li{
+  width: 45%;
+  position: absolute;
+}
+#service .wrap ul li:nth-child(1){
+  left: 0;
+  top: 0;
+}
+#service .wrap ul li:nth-child(2){
+  right: 0;
+  top: 14%;
+}
+#service .wrap ul li:nth-child(3){
+  left: 0;
+  top: 45%;
+}
+#service .wrap ul li:nth-child(4){
+  right: 0;
+  top: 60%;
+}
+#service .wrap ul li div.img{
+  width: 100%;
+  height: 400px;
+  background-image: url(../img/bannerbg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#service .wrap ul li::after{
+  content: "";
+  width: 237px;
+  height: 237px;
+  display: block;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-top: 53px;
+}
+/* #service .wrap ul li:nth-child(1)::after{
+  background-image: url(../img/sect03-cont01.svg);
+}
+#service .wrap ul li:nth-child(2)::after{
+  background-image: url(../img/sect03-cont02.svg);
+}
+#service .wrap ul li:nth-child(3)::after{
+  background-image: url(../img/sect03-cont03.svg);
+} */
+#service .wrap ul li h3{
+  font-size: 40px;
+  margin: 15px 0;
+  font-weight: 700;
+  font-family: 'Black And White Picture', sans-serif;
+}
+/* #service .wrap ul li h3::after{
+  content: "";
+  width: 200px;
+  display: block;
+  border-bottom: 3px solid #ccc;
+  margin: 0 auto;
+  margin-top: 8px;
+} */
+#service .wrap ul li p{
+  font-size: 17px;
+  line-height: 1.3;
+  /*! width: 70%; */
+  /*! margin: 0 auto; */
+  /*! padding: 0 60px; */
+}
+#service .wrap ul li .overcontents{
+  position: absolute;
+  left: 0;
+  top: 60px;
+  background-color: #f5f2e1;
+  line-height: 1.3;
+  /*   display: none; */
+  opacity:0; /* 투명도 */
+  transition: all 0.7s; /* 변이: 값의 차이만큼 애니메이션 처리 all은 모든속성들 0.7s(초) */
+}
+/* #service .wrap ul li:hover .overcontents{
+  /*   display: block; */
+  opacity: 1;
+  top: 80px;
+} */
+#service .wrap ul li .overcontents h3{
+  
+}
+#service .wrap ul li .overcontents p{
+  line-height: 1.5;
+  font-size: 16px;
+  padding: 0 14px;
+}
+#service .wrap ul li .overcontents p:nth-of-type(2){
+  margin: 20px 0 40px;
+}
+#service .wrap ul li .overcontents img{
+  
+}
+
+#nth{
+  
+}
+#nth p{
+  
+}
+#nth p:nth-child(2n+2){ /*odd 홀수번째,even은 짝수번째,n+4 4번째부터,2n+2 2번째에 2배수로*/
+  background-color: red;
+}
+
+
+/* ---------------------------------히스토리----------------------------------- */
+#history{
+
+}
+#history .wrap{
+  
+  width: 1200px;
+  margin: 0 auto;
+  /*! margin-left: 200px; */
+  background-image: url(../img/beer2.png);
+  background-repeat: no-repeat;
+  background-position-x: left;
+  background-size: 17%;
+  background-origin: content-box;
+/*   background-origin: padding-box; */
+  /*! border: 80px solid rgba(10,10,10,0.4); */
+  /*! background-origin: border-box; */
+  display: flex;
+  justify-content: space-between;
+  background-position-y: bottom;
+}
+#history .wrap hgroup{
+  
+}
+#history .wrap hgroup h2{
+  
+}
+#history .wrap hgroup h3{
+  line-height: 1.6;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+#history .wrap hgroup h3 span{
+  display: block;
+}
+#history .wrap ul.list{
+  line-height: 2.5;
+  padding-right: 52px;
+  position: relative;
+  width: 65%;
+  text-align: right;
+}
+#history .wrap ul.list::before{
+  content: "";
+  width: 10px;
+  height: 10px;
+  display: block;
+  border: 3px solid;
+  border-radius: 50%;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+#history .wrap ul.list::after{
+  content: "";
+  height: 95%;
+  display: block;
+  border-left: 3px solid;
+  position: absolute;
+  right: 6px;
+  top: 13px;
+}
+#history .wrap ul.list li{
+  
+}
+#history .wrap ul.list li:nth-child(1){
+  line-height: 1;
+  margin-bottom: 12px;
+}
+#history .wrap ul.list li:nth-child(n+2){
+  color: #bbb;
+}
+#history .wrap ul.list li:nth-child(1){
+  line-height: 1;
+  margin-bottom: 12px;
+}
+#history .wrap ul.list li:nth-child(n+2){
+  color: #bbb;
+}
+
+/* --------------------------------------찾아오는 길------------------------------ */
+
+section#location{
+
+}
+section#location .wrap{
+  width: 1055px;
+  margin: 0 auto;
+  display: flex;
+  column-gap: 70px;
+  background-image: url(../img/beerimg.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  position: relative;
+  height: 300px;
+  /*! padding-top: 200px; */
+  /*! padding-bottom: 200px; */
+  /*! margin-bottom: 200px; */
+  margin-top: 50px;
+  margin-bottom: 150px;
+}
+section#location .wrap::before{
+  content:"";
+  display: block;
+  background-image: url(../img/bage.png);
+  width: 377px;
+  height: 98px;
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 188.5px);
+  background-size: cover;
+}
+section#location .wrap iframe{
+  border: 2px solid #000 !important;
+  width: 790px;
+  height: 390px;
+}
+
+section#location .wrap .right hgroup h2{
+  line-height: 1;
+  font-family: 'Black And White Picture', sans-serif;
+  font-weight: bold;
+  font-size: 35px;
+  letter-spacing: 3px;
+}
+section#location .wrap .right hgroup h2 span{
+  font-size: 70px;
+}
+section#location .wrap .text{
+  position: absolute;
+  right: 2%;
+  top: 52%;
+}
+section#location .wrap .text h2{
+  font-size: 45px;
+  font-family: 'Black And White Picture', sans-serif;
+}
+section#location .wrap .text p{
+  font-size: 20px;
+  margin: 10px 0 10px 0;
+  font-family: 'Gothic A1', sans-serif;
+}
+section#location .wrap .text .tagwrap{
+  display: flex;
+}
+section#location .wrap .text .tagwrap{
+  
+}
+section#location .wrap .text .tagwrap .tag{
+  display: block;
+  padding: 7px;
+  border: 1px solid;
+  border-radius: 7px;
+  margin-right: 10px;
+  font-size: 14px;
+} 
+section#location .wrap .text a{
+  margin-top: 21px;
+  display: inline-block;
+  line-height: 3;
+  padding: 0px 45px;
+  border: 1px solid;
+  background-color: black;
+  color: white;
+  border-radius: 100px;
+  font-weight: 500;
+  transition: all 0.5s;
+}
+section#location .wrap .text a:hover{
+  background-color: white;
+  color: black;
+}
+section#location .wrap .text .control{
+  
+}
+section#location .wrap .text .control button.pre{
+  
+}
+section#location .wrap .text .control button.next{
+  
+}
+section#about .company span.control button.prev{
+  background-image: url(../img/r-arrow.svg);
+  transform: rotate(180deg);
+  background-position-x: center;
+  margin-right: 30px;
+}
+section#about .company span.control button.next{
+  background-image: url(../img/r-arrow.svg);
+  background-position-x: center;
+}
+section#location .wrap .right a::after{
+  content: "";
+  width: 10px;
+  height: 10px;
+  border: 2px solid #000;
+  display: inline-block;
+  margin-left: 10px;
+  border-left: transparent;
+  border-bottom: transparent;
+  transform: rotate(45deg);
+}
+section#recommend{
+  
+}
+section#recommend .wrap{
+  position: relative;
+  text-align: center;
+}
+section#recommend .wrap .ex{
+  font-family: 'Black And White Picture', sans-serif;
+  font-size: 39px;
+}
+section#recommend .wrap a{
+  margin-top: 20px;
+  display: inline-block;
+  line-height: 3;
+  padding: 0px 45px;
+  border: 1px solid;
+  background-color: black;
+  color: white;
+  border-radius: 100px;
+  font-weight: 500;
+  transition: all 0.5s;
+  margin-bottom: 20px;
+}
+section#recommend .wrap ul{
+  display: flex;
+  justify-content: center;
+}
+section#recommend .wrap ul li{
+  border: 1px solid black;
+  width: 16%;
+  padding: 20px 30px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+section#recommend .wrap ul li::after{
+  content: "";
+  width: 10px;
+  height: 10px;
+  display: block;
+  border: 1px solid black;
+  border-top: transparent;
+  border-left: transparent;
+  transform: rotate(45deg);
+  margin-left: 20px;
+}
+
+section#recommend .wrap p:nth-child(1){
+  font-size: 44px;
+}
+section#recommend .wrap .text{
+  right: 32%;
+  top: 87%;
+  margin-top: 50px;
+}
+section#recommend .wrap .text:after{
+  content: "";
+  display: block;
+  width: 100%;
+  height: 400px;
+  background-image: url(../img/beerimg.png), url(../img/beer3.png), url(../img/beer6.png);
+  background-repeat: no-repeat;
+  background-size: 17%,7%,6%;
+  margin: 0 auto;
+  background-position-x: 50%, 37%, 60%;
+  background-position-y: bottom;
+}
+section#recommend .wrap .text h2{
+  font-size: 45px;
+  font-family: 'Black And White Picture', sans-serif;
+}
+section#recommend .wrap .text p{
+  font-size: 20px;
+  margin: 10px 0 10px 0;
+}
+section#recommend .wrap .text .tagwrap{
+  
+  display: flex;
+  justify-content: center;
+}
+section#recommend .wrap .text .tagwrap .tag{
+  display: block;
+  padding: 7px;
+  border: 1px solid;
+  border-radius: 7px;
+  margin-right: 10px;
+  font-size: 14px;
+} 
+section#recommend .wrap .text a{
+  margin-top: 21px;
+  display: inline-block;
+  line-height: 3;
+  padding: 0px 45px;
+  border: 1px solid;
+}
+
+
+
+
+
+
+
+
+
+
+
+
