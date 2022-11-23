@@ -12,16 +12,19 @@ section{
 }
 .subject{
   line-height: 1;
-  font-size: 35px;
+  font-size: 26px;
   margin-bottom: 30px;
   margin-top: 0;
-  font-family: 'Black And White Picture', sans-serif;
+  /*! font-family: 'Black And White Picture', sans-serif; */
   font-weight: bold;
-  letter-spacing: 3px;
+  letter-spacing: 0px;
 }
 .subject span{
   
   font-size: 70px;
+  font-family: 'Black And White Picture', sans-serif;
+  color: #7e4001;
+  letter-spacing: 3px;
 }
 .subject2{
   font-size: 40px;
@@ -38,12 +41,12 @@ section#about .company{
 section#about .company div{
 }
 section#about .company p{
-  font-size: 39px;
-  font-family: 'Black And White Picture', sans-serif;
+  font-size: 33px;
+  font-weight: 600;
+  line-height: 1.2;
 }
 section#about .company p:nth-child(2){
   font-size: 19px;
-  font-family: 'Gothic A1', sans-serif;
   font-weight: 300;
   margin-top: 20px;
   line-height: 1.3;
@@ -121,7 +124,7 @@ section#about .company img:first-child + img{ /* img태그는 인라인태그 �
   background-repeat: no-repeat;
   background-position-x: 99% ,left;
   background-position-y: 4%, 90%;
-  background-size: 7%, 19%;
+  background-size: 7%, 17%;
 }
 /* #service .wrap h2.subject{
   margin: 0 auto;
@@ -186,10 +189,9 @@ section#about .company img:first-child + img{ /* img태그는 인라인태그 �
   background-image: url(../img/sect03-cont03.svg);
 } */
 #service .wrap ul li h3{
-  font-size: 40px;
+  font-size: 29px;
   margin: 15px 0;
-  font-weight: 700;
-  font-family: 'Black And White Picture', sans-serif;
+  font-weight: bold;
 }
 /* #service .wrap ul li h3::after{
   content: "";
@@ -217,7 +219,7 @@ section#about .company img:first-child + img{ /* img태그는 인라인태그 �
   transition: all 0.7s; /* 변이: 값의 차이만큼 애니메이션 처리 all은 모든속성들 0.7s(초) */
 }
 /* #service .wrap ul li:hover .overcontents{
-  /*   display: block; */
+  display: block;
   opacity: 1;
   top: 80px;
 } */
@@ -267,22 +269,12 @@ section#about .company img:first-child + img{ /* img태그는 인라인태그 �
   display: flex;
   justify-content: space-between;
   background-position-y: bottom;
+  flex-direction: row-reverse;
 }
-#history .wrap hgroup{
+#history .wrap h2{
   
 }
-#history .wrap hgroup h2{
-  
-}
-#history .wrap hgroup h3{
-  line-height: 1.6;
-  margin-top: 20px;
-  margin-bottom: 30px;
-  font-size: 20px;
-}
-#history .wrap hgroup h3 span{
-  display: block;
-}
+
 #history .wrap ul.list{
   line-height: 2.5;
   padding-right: 52px;
@@ -323,18 +315,33 @@ section#about .company img:first-child + img{ /* img태그는 인라인태그 �
 #history .wrap ul.list li:nth-child(1){
   line-height: 1;
   margin-bottom: 12px;
+  font-size: 17px;
 }
 #history .wrap ul.list li:nth-child(n+2){
   color: #bbb;
+  font-size: 17px;
 }
 
 /* --------------------------------------찾아오는 길------------------------------ */
 
 section#location{
-
+  /*! background-image: url(../img/bg2.png); */
+  width: 100%;
+  padding: 10px 0;
+  position: relative;
+}
+section#location::before{
+  content:"";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.6);
+  position: absolute;
+  top: 0;
+  display: none;
 }
 section#location .wrap{
-  width: 1055px;
+  width: 1200px;
   margin: 0 auto;
   display: flex;
   column-gap: 70px;
@@ -349,6 +356,7 @@ section#location .wrap{
   /*! margin-bottom: 200px; */
   margin-top: 50px;
   margin-bottom: 150px;
+  color: black;
 }
 section#location .wrap::before{
   content:"";
@@ -367,24 +375,26 @@ section#location .wrap iframe{
   height: 390px;
 }
 
-section#location .wrap .right hgroup h2{
+section#location .wrap .left h2{
   line-height: 1;
-  font-family: 'Black And White Picture', sans-serif;
   font-weight: bold;
-  font-size: 35px;
-  letter-spacing: 3px;
+  font-size: 26px;
+  letter-spacing: 0;
 }
-section#location .wrap .right hgroup h2 span{
+section#location .wrap .left h2 span{
   font-size: 70px;
+  font-family: 'Black And White Picture', sans-serif;
+  color: #a75d00;
+  letter-spacing: 3px;
 }
 section#location .wrap .text{
   position: absolute;
-  right: 2%;
+  right: 5%;
   top: 52%;
 }
 section#location .wrap .text h2{
-  font-size: 45px;
-  font-family: 'Black And White Picture', sans-serif;
+  font-size: 34px;
+  font-weight: bold;
 }
 section#location .wrap .text p{
   font-size: 20px;
@@ -406,7 +416,7 @@ section#location .wrap .text .tagwrap .tag{
   font-size: 14px;
 } 
 section#location .wrap .text a{
-  margin-top: 21px;
+  margin-top: 40px;
   display: inline-block;
   line-height: 3;
   padding: 0px 45px;
@@ -459,8 +469,8 @@ section#recommend .wrap{
   text-align: center;
 }
 section#recommend .wrap .ex{
-  font-family: 'Black And White Picture', sans-serif;
-  font-size: 39px;
+  font-size: 31px;
+  font-weight: bold;
 }
 section#recommend .wrap a{
   margin-top: 20px;
@@ -486,7 +496,7 @@ section#recommend .wrap ul li{
   font-size: 20px;
   display: flex;
   justify-content: center;
-  margin: 20px;
+  margin: 30px 15px;
 }
 section#recommend .wrap ul li::after{
   content: "";
@@ -506,7 +516,7 @@ section#recommend .wrap p:nth-child(1){
 section#recommend .wrap .text{
   right: 32%;
   top: 87%;
-  margin-top: 50px;
+  margin-top: 90px;
 }
 section#recommend .wrap .text:after{
   content: "";
@@ -521,8 +531,8 @@ section#recommend .wrap .text:after{
   background-position-y: bottom;
 }
 section#recommend .wrap .text h2{
-  font-size: 45px;
-  font-family: 'Black And White Picture', sans-serif;
+  font-size: 38px;
+  font-weight: bold;
 }
 section#recommend .wrap .text p{
   font-size: 20px;

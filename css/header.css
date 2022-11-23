@@ -2,7 +2,7 @@ body{
     margin: 0;
     padding: 0;
     background-color: #f5f2e1;
-    font-family: 'Gothic A1', sans-serif;
+    font-family: 'Nanum Gothic', sans-serif;
 }
 h1,h2,h3,h4,h5,h6,p,a{
     line-height: 1;/*줄높이,글높이*/
@@ -25,7 +25,7 @@ header{
     top: 0;
     left: calc(50% - 720px);
     color: white;
-    z-index: 1;
+    z-index: 5;
 }
 div>*{ /* css주석 >바로아래 * 모든 요소 */
     /*! border: 1px solid; */
@@ -50,7 +50,7 @@ header ul{
     /*! gap: 15px; */
     margin: 1px 2px 3px 4px;
     padding: 0;
-    width: 70%;
+    width: 100%;
     justify-content: space-between;
 }
 header ul li{
@@ -65,10 +65,10 @@ header ul li a{
     display: block;
     padding: 15px;
     color: white;
+    transition: all 0.3s;
 }
 header ul li a:hover{ /*:hover은 해당요소에 마우스를 올린상태를 의미 */
-    color:#000;
-    border-bottom:2px solid #ccc;
+    color: rgba(255,255,255,0.4);
 }
 a{
  text-decoration: none; /*밑줄없애기*/

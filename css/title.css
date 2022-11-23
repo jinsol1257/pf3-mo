@@ -1,6 +1,6 @@
 div#title{
   height: 100%;
-  background-image: url(../img/bannerbg.png);
+  background-image: url(../img/bannerbg.jpg);
   background-repeat: no-repeat;
   color: white;
   background-size: cover;
@@ -22,7 +22,6 @@ div#title .in{
   margin: 0 auto;
   /*! border: 3px solid #999; */
   border-top: transparent;
-  font-family: 'Noto Sans KR', sans-serif;
   padding-top: 400px;
   /*! padding-left: 100px; */
   box-sizing: border-box; /* padding을 주면 크기가 커지는데 크기가 커지지 않게 처리 */
@@ -32,6 +31,7 @@ div#title .in{
 
 div#title h2{
   font-size: 21px;
+  color: rgba(255,255,255,0.8);
 }
 div#title h2 + p{ /* + 인접선택자,형제선택자 h2다음에 오는 p */
   font-size: 80px;
@@ -45,7 +45,7 @@ div#title h2 + p + p{
   line-height: 1.5;
 }
 div#title a{ /* 인라인태그에는 padding(크기에 영향)이 정확히 적용되지 않는다.display:block로 전환 */
-  border: 1px solid;
+  /*! border: 1px solid; */
   padding: 20px 30px;
   /*! margin-top: 30px; */
   display: inline-block;
